@@ -1342,6 +1342,16 @@
   window.addEventListener('beforeunload', () => {
     audio.pause();
   });
+
+  document.querySelectorAll('a[href*="calendly.com"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (!audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+        setPlayingUI(false);
+      }
+    });
+  });
 })();
 </script>
 
