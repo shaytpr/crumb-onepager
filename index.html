@@ -172,6 +172,23 @@
     margin-bottom: 32px;
   }
   .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-trial {
+    margin-top: 18px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--cocoa-soft);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-trial::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--terracotta);
+  }
+  .hero-trial strong { color: var(--terracotta); font-weight: 600; }
 
   .hero-visual {
     display: flex;
@@ -574,6 +591,27 @@
   }
   .steps-note strong { color: var(--cocoa); font-weight: 600; }
 
+  .plans-trial {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    margin: 0 0 28px;
+    background: var(--whisper);
+    border: 1px solid rgba(200, 84, 42, 0.25);
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--cocoa);
+  }
+  .plans-trial::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--terracotta);
+  }
+  .plans-trial strong { color: var(--terracotta); font-weight: 600; }
   .plans {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -900,6 +938,7 @@
           Hear Example
         </a>
       </div>
+      <div class="hero-trial"><strong>7-day free trial</strong> · No credit card required</div>
     </div>
     <div class="hero-visual">
       <div class="voice-orb-wrap">
@@ -1097,6 +1136,8 @@
     <div class="section-eyebrow">Plans</div>
     <h2>Three sizes. <em>Pick what fits</em>.</h2>
 
+    <div class="plans-trial"><strong>7-day free trial</strong> · No credit card required</div>
+
     <div class="plans">
 
       <div class="plan">
@@ -1175,6 +1216,10 @@
         <div class="faq-a">Within the first ring. Faster than any human receptionist, every time.</div>
       </div>
       <div class="faq-item">
+        <div class="faq-q">Is there a free trial?</div>
+        <div class="faq-a">Yes. Every plan starts with a 7-day free trial, no credit card required. Try Crumb on real calls and only pay if you decide to keep it.</div>
+      </div>
+      <div class="faq-item">
         <div class="faq-q">What if I'm not happy?</div>
         <div class="faq-a">No long contracts. Cancel any month. If the first month doesn't pay for itself, we refund it.</div>
       </div>
@@ -1184,7 +1229,7 @@
   <section class="cta">
     <h2>Stop losing customers to a <em>missed ring</em>.</h2>
     <p class="cta-sub">
-      Book a free 20-minute call. We'll show you Crumb live and tell you exactly how it would fit your business. No pressure, no tech jargon.
+      Book a free 20-minute call. We'll show you Crumb live and tell you exactly how it would fit your business. Start with a 7-day free trial &mdash; no credit card required.
     </p>
     <a href="https://calendly.com/crumb-appsbakery" target="_blank" rel="noopener" class="cta-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
